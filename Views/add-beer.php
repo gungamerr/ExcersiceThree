@@ -40,8 +40,7 @@
                     <option value="">Rubia</option>
                     <option value="">Negra</option>
                     <option value="">Roja</option>
-                    <option value="">Ipa</option>                    
-                    <option value="">Etc</option>                    
+                    <option value="">Ipa</option>                                       
                   </select>
                 </td>
                 <td>

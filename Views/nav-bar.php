@@ -22,14 +22,14 @@
             <li class="active"><a href="<?php echo FRONT_ROOT ?>">Menu Principal</a></li>
             <li><a class="drop" href="#">Cervezas</a>
               <ul>
-                <li><a href="">Agregar</a></li>
-                <li><a href="">Ver Listado</a></li>
+                <li><a href="<?php echo FRONT_ROOT?>Home/AddBeer">Agregar</a></li>
+                <li><a href="<?php echo FRONT_ROOT?>Home/BeerList">Ver Listado</a></li>
               </ul>
             </li>
             <li><a class="drop" href="#">Tipos de Cervezas</a>
               <ul>
-                <li><a href="">Agregar</a></li>
-                <li><a href="">Ver Listado</a></li>
+                <li><a href="<?php echo FRONT_ROOT?>Home/AddBeerType">Agregar</a></li>
+                <li><a href="<?php echo FRONT_ROOT?>Home/BeerTypeList">Ver Listado</a></li>
               </ul>
             </li>
         </ul>

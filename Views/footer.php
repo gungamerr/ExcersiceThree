@@ -4,9 +4,9 @@
       <nav>
         <ul class="nospace inline pushright uppercase">
           <li><a href="home.php"><i class="fas fa-lg fa-home"></i></a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Cervezas</a></li>
-          <li><a href="">Tipos de Cerveza</a></li>
+          <li><a href="<?php echo FRONT_ROOT?>Home/Index">Home</a></li>
+          <li><a href="<?php echo FRONT_ROOT?>Home/BeerList">Cervezas</a></li>
+          <li><a href="<?php echo FRONT_ROOT?>Home/BeerTypeList">Tipos de Cerveza</a></li>
         </ul>
       </nav>
     </div>
