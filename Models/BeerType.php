@@ -15,12 +15,12 @@
          $this->setDescription($description);
      }
 
-     public function __construct(BeerType $beer)
-     {
-        $this->setId($beer->getId());
-        $this->setName($beer->getName());
-        $this->setDescription($beer->getDescription());
-     }
+     // public function __construct(BeerType $beer)
+     // {
+     //    $this->setId($beer->getId());
+     //    $this->setName($beer->getName());
+     //    $this->setDescription($beer->getDescription());
+     // }
 
      /**
       * Get the value of id

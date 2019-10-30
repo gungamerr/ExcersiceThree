@@ -11,9 +11,10 @@
         private $description;
         private $density;
         private $Beertype;
+        private $origin;
         private $price;
 
-        public function __construct($id,$code,$name,$description,$density,Beertype $Beertype, $price)
+        public function __construct($id,$code,$name,$description,$density,Beertype $Beertype,$origin, $price)
         {
             $bee = new BeerType($Beertype);
             $this->setId($id);
@@ -22,6 +23,7 @@
             $this->setDescription($description);
             $this->setDensity($density);
             $this->setBeertype($bee);
+            $this->setOrigin($origin);
             $this->setPrice($price);
         }
         /**
@@ -140,8 +142,9 @@
          */ 
         public function setBeertype($Beetype)
         {
-                $this->Beertype = $Beertype;
-
+                $this->Beertype->setId($Beetype->getId());
+                $this->Beertype->setName($BeetType->getName());
+                $this->Beertype->setDescription($Beetype->getDescription());
                 return $this;
         }
 
@@ -161,6 +164,26 @@
         public function setPrice($price)
         {
                 $this->price = $price;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of origin
+         */ 
+        public function getOrigin()
+        {
+                return $this->origin;
+        }
+
+        /**
+         * Set the value of origin
+         *
+         * @return  self
+         */ 
+        public function setOrigin($origin)
+        {
+                $this->origin = $origin;
 
                 return $this;
         }
