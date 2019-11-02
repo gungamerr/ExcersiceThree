@@ -14,15 +14,15 @@
         private $origin;
         private $price;
 
-        public function __construct($id,$code,$name,$description,$density,Beertype $Beertype,$origin, $price)
+        public function __construct($id,$code,$name,$description,$density,Beertype $Beetype,$origin, $price)
         {
-            $bee = new BeerType($Beertype);
+            $this->BeerType = new BeerType();
             $this->setId($id);
             $this->setCode($code);
             $this->setName($name);
             $this->setDescription($description);
             $this->setDensity($density);
-            $this->setBeertype($bee);
+            $this->setBeertype($Beetype);
             $this->setOrigin($origin);
             $this->setPrice($price);
         }
@@ -140,11 +140,9 @@
          *
          * @return  self
          */ 
-        public function setBeertype($Beetype)
+        public function setBeertype(BeerType $beeType)
         {
-                $this->Beertype->setId($Beetype->getId());
-                $this->Beertype->setName($BeetType->getName());
-                $this->Beertype->setDescription($Beetype->getDescription());
+                $this->Beertype = $beeType;
                 return $this;
         }
 

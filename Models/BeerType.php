@@ -5,22 +5,17 @@
     class BeerType
     {
      private $id;
+     private $code;
      private $name;
      private $description;
-     
-     public function __construct($id,$name,$description)
+     private $recipe;
+
+     public function __construct()
      {
-         $this->setId($id);
-         $this->setName($name);
-         $this->setDescription($description);
+
      }
 
-     // public function __construct(BeerType $beer)
-     // {
-     //    $this->setId($beer->getId());
-     //    $this->setName($beer->getName());
-     //    $this->setDescription($beer->getDescription());
-     // }
+     
 
      /**
       * Get the value of id
@@ -78,6 +73,46 @@
      public function setDescription($description)
      {
           $this->description = $description;
+
+          return $this;
+     }
+
+     /**
+      * Get the value of recipe
+      */ 
+     public function getRecipe()
+     {
+          return $this->recipe;
+     }
+
+     /**
+      * Set the value of recipe
+      *
+      * @return  self
+      */ 
+     public function setRecipe($recipe)
+     {
+          $this->recipe = $recipe;
+
+          return $this;
+     }
+
+     /**
+      * Get the value of code
+      */ 
+     public function getCode()
+     {
+          return $this->code;
+     }
+
+     /**
+      * Set the value of code
+      *
+      * @return  self
+      */ 
+     public function setCode($code)
+     {
+          $this->code = $code;
 
           return $this;
      }

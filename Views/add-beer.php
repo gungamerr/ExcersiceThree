@@ -14,7 +14,7 @@
     <div class="content" > 
       <div id="comments" style="align-items:center;">
         <h2>Ingresar Cerveza</h2>
-        <form action="<?php echo FRONT_ROOT?>Beer/add" method="post" style="background-color: #EAEDED;padding: 2rem !important;">
+        <form action="<?php echo FRONT_ROOT?>Beer/add/" method="post" style="background-color: #EAEDED;padding: 2rem !important;">
           <table> 
             <thead>
               <tr>
@@ -37,10 +37,9 @@
                 </td>
                 <td>
                   <select name="type" style="margin-top: 3%;min-height: 35px;height: 20px" required>
-                    <option value="Rubia">Rubia</option>
-                    <option value="Negra">Negra</option>
-                    <option value="Roja">Roja</option>
-                    <option value="Ipa">Ipa</option>                                       
+                    <?php foreach($typeList as $type) {?>
+                    <option value="<?php echo $type->getId();?>"><?php echo $type->getName();?></option>
+                    <?php }?>                                    
                   </select>
                 </td>
                 <td>

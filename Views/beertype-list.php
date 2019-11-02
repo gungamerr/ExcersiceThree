@@ -13,7 +13,7 @@ include_once('nav-bar.php');
     <!-- main body -->
     <div class="content"> 
       <div class="scrollable">
-      <form action="" method="">
+      <form action="<?php echo FRONT_ROOT?>BeerType/eliminar/" method="post">
         <table style="text-align:center;">
           <thead>
             <tr>
@@ -25,14 +25,20 @@ include_once('nav-bar.php');
             </tr>
           </thead>
           <tbody>
+          <?php foreach ($beerList as $beer) {?>
+            
             <tr>
-            <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td><button type="submit" class="btn" href="" value="">Eliminar</button></td>
+                <td><?php echo $beer->getCode();?></td>
+                <td><?php echo $beer->getName();?></td>
+                <td><?php echo $beer->getDescription();?></td>
+                <td><?php echo $beer->getRecipe();?></td>
+                <td>
+                  <button type="submit" name="id"class="btn" value="<?php echo $beer->getId();?>">Eliminar</button>
+                </td>
             </tr>
+            <?php  };?>
           </tbody>
+          
         </table>
       </form> 
       </div>

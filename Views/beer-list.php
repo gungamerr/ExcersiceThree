@@ -26,36 +26,20 @@
               </tr>
             </thead>
             <tbody>
+            <?php foreach($beerList as $beer){?>
              <tr>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
+                <td><?php echo $beer->getCode();?> </td>
+                <td><?php echo $beer->getName();?></td>
+                <td><?php echo $beer->getBeertype()->getName();?></td>
+                <td><?php echo $beer->getDescription();?></td>
+                <td><?php echo $beer->getDensity();?></td>
+                <td><?php echo $beer->getOrigin();?></td>
+                <td><?php echo $beer->getPrice();?></td>
               </tr>
-              <tr>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-              </tr>
-              <tr>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-              </tr>
+              <?php }; ?>
             </tbody>
           </table>
-          <form action="" method="">
+          <form action="<?php echo FRONT_ROOT?>Beer/remove_by_model" method="post">
             <table style="max-width: 35%;" >
             <thead>
               <tr>
@@ -66,7 +50,7 @@
             <tbody align=center>
               <tr>
                 <td>
-                  <input type="number" name="" style="height: 40px;" min="0">  
+                  <input type="number" name="model" style="height: 40px;" min="0">  
                 </td>
                 <td>
                   <button type="submit" class="btn" href="" value="">Remover</button>

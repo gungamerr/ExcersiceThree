@@ -1,0 +1,30 @@
+[
+    {
+        "id": 30,
+        "code": "1",
+        "name": "Blonde",
+        "description": "Suave",
+        "recipe": "Hiper soft"
+    },
+    {
+        "id": 31,
+        "code": "2",
+        "name": "Red",
+        "description": "Roja fuerte",
+        "recipe": "Super Ibu"
+    },
+    {
+        "id": 32,
+        "code": "3",
+        "name": "Negra",
+        "description": "Carbon",
+        "recipe": "Carbonada"
+    },
+    {
+        "id": 33,
+        "code": "4",
+        "name": "Ipa",
+        "description": "Super Pesada",
+        "recipe": "Ibu extreme"
+    }
+]
